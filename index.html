@@ -1,240 +1,441 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
 
-<!-- This is a comment. Comments begin with a less-than symbol ('<'),
-an exclamation mark ('!'), and two dashes ('-'). They end with two
-dashes and a greater-than sign ('>'). Note that two dashes ('-')
-should never appear in succession in a comment other than at the
-beginning and at the end: -->
+<!DOCTYPE html>
+<html> 
+<head>
+  <!--link rel="stylesheet" type="text/css" href="style.css"-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8"> 
 
-<!-- less-than ('<') and greather-than ('>') signs have special
-meaning outside comments, so use &lt; for less-than and &gt; for
-greather-than when writing text. Similarly for the ampersand ('&'),
-for which you should use &amp; -->
+<title>Andrej Risteski</title>
 
-<!-- This document is written in HTML. To learn more about HTML, you
-should try having a look at some of these links: 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-   http://www.htmlhelp.com/
-   http://www.w3.org/TR/REC-HTML4/
+  ga('create', 'UA-27318059-2', 'auto');
+  ga('send', 'pageview');
 
-The first is a good source of easy to understand help. The second is
-the authoritative reference for HTML, if you have any difficult
-questions that document will have the answer (but it may not be very
-easy to understand!). -->
+</script>
 
-<!-- The next line starts the document and says that it is in English
-(language code "en"). You can use other language codes too, see
-   http://www.oasis-open.org/cover/iso639a.html
-...for more information. -->
 
-<html lang="en">
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
- <head> <!-- This is the start of the document header. -->
 
-  <!-- The next line gives the document's title. Note that the
-  ending tag is the same as beginning tag but has a / after the
-  less-than sign. -->
-  <title>Stefano Bruno's Home Page</title> 
+</head>
+<body>
 
-  <!-- The next block gives the style for the document. -->
-  <style type="text/css"><!--
 
-    /* In a style block, comments are different. They start with a
-    slash ("/") and an asterisk ("*") and end with an asterisk ("*")
-    and another slash ("/"): */
 
-    /* Style blocks are written in Cascading Style Sheets (CSS). For
-    more information on CSS, try: 
-       http://www.w3.org/Style/CSS/
-    You will also find a link to the latest specifications there. */
+<div class="banner">
+<div class="picture"><h2><strong>Andrej Risteski</strong> </h2>  </div>
+<div class="logo"> <img src="scslogo_no_outline_simple.gif" height="60px"/>     </div>
+</div>
 
-    /* First, we will set up some nice decorations */
-    /* This sets up the line that appears below the header */
-    h1 { border-bottom: medium solid; }
-    /* The next rule sets of the line that appears above the footer. 
-    Notice the ".xxx" syntax which matches the "class" attribute.
-    See the bottom of the file to see what I mean. */
-    .footer { border-top: thin solid; }
-    
-    /* Next, the colours: */
-    body { background: white; color: black; } /* main page */
-    :link { background: transparent; color: blue; } /* unvisited links */
-    :visited { background: transparent; color: purple; } /* visited links */
-    :link:hover, :visited:hover, :link:active, :visited:active
-      { background: transparent; color: red; } /* active links */
-    /* The next line sets the colour of the main header */
-    h1 { background: transparent; color: #009900; border-color: #000000; }
-    /* And the following line sets the colour of the "definition terms".
-    See the content below for more information. */
-    dt { background: transparent; color: #006600; }
 
-    /* The paddings and margins */
-    /* So that the footer doesn't look squashed up, we give it some padding.
-    The "em" units are relative to the font size of the element. The first
-    number refers to the top and bottom padding, the second to the right and
-    left padding. */
-    .footer { padding: 0.1em 0.2em; }
-    dt { margin-top: 0.5em; }
+<div style="width: 80%;">
+    <div style="padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem; padding-top: 2rem;">
+<table class="imgtable"><tr><td>
+<a href="photo_bridge.jpg"><img src="photo_bridge.jpg" alt="Andrej Risteski" height="317px"/></a>&nbsp;</td>
+<td align="left">
 
-    /* Next we'll set the fonts */
-    body { font-family: Verdana, Arial, sans-serif; }
-    h1 { font-weight: 100; letter-spacing: 0.5em; }
-    dt { font-weight: bold; display: run-in; }
-    .footer { font-size: smaller; font-style: italic; }
 
-    /* Finally, if you add a picture, we'll just make sure it floats
-    to the right of the page */
-    p img { float: right; }
+
+<p> I am an Assistant Professor at the <a href="https://www.ml.cmu.edu/"> Machine Learning Department</a> in <a href="https://www.cmu.edu/"> Carnegie Mellon University</a>.   
+Prior to that, I was a Norbert Wiener Research Fellow jointly in the Applied Math department and IDSS at MIT. I received my PhD in the Computer Science Department at Princeton University under the advisement of Sanjeev Arora.  </p> 
+
+ <p> My research interests lie in the intersection of machine learning, statistics, and theoretical computer science, spanning topics like (probabilistic) generative models, algorithmic tools for learning and inference, representation and self-supervised learning, out-of-distribution generalization and applications of neural approaches to natural language processing and scientific domains. <br>
+More broadly, the goal of my research is principled and mathematical understanding of statistical and algorithmic problems arising in modern machine learning paradigms.
+ </p>
+
+<p> I am the receipient of an Amazon Research Award ("Causal + Deep Out-of-Distribution Learning") and an NSF CAREER Award ("Theoretical Foundations of Modern Machine Learning Paradigms: Generative and Out-of-Distribution"). I am also in part supported by NSF award IIS-2211907 ("Foundations of Self-Supervised Learning Through the Lens of Probabilistic Generative Models").</p>
+
+<p> The easiest way to reach me is email. My address is aristesk <i>at</i> andrew.cmu.edu  </p>
+
+
+
+<!--The mathematical tools I like to use often come from areas like statistics, theoretical computer science and statistical physics. </p>-->
  
-  --></style>
+<!-- <p> 
+Read my <a href="cv.pdf"> CV </a> for more details, or browse my publications below.  
+</p> -->
 
-  <!-- The next line gives a piece of "metadata" (metadata means data
-  about data) which simply says what program originally generated this
-  document. -->
-  <meta name="generator" content="This page was generated by the Bath University 'mkhome' script, based on a template by Ian Hickson (py8ieh=mkhome@bath.ac.uk).">
-
-  <!-- We conclude the header with a link to you, the document
-  maintainer. -->
-  <link rev="made" href="mailto:s.bruno@bath.ac.uk">
-
- </head> <!-- This is the end of the document header. -->
-
- <body> <!-- This is the start of the document body. -->
-
-  <h1> Dr Stefano Bruno </h1>
-    <dl>
-  <!-- This is a definition list, like a dictionary. In a definition
-  list you can have terms by using <dt> and definitions using <dd>.
-  Each should of course have a matching end-tag </dt> and </dd>. -->
-    </div>
-        <div class="w3-third w3-container">
-            <p class="w3-padding-large w3-padding-64 w3-center">
-                <img src="My_picture_website.jpg" title="WGPhoto" alt="" width=120 height=120 />
-            </p>
-        </div>
-    </div>
-     
-I am Postdoctoral Research Associate in the School of Mathematics at the University of Edinburgh. I am part of the Probability and Stochastic Analysis group and my current advisor is Prof.  <a href="https://www.turing.ac.uk/people/researchers/sotirios-sabanis">Sotirios Sabanis</a>. I obtained my PhD from the University of Bath in March 2022, under the supervision of Prof. <a href="https://www.uni-muenster.de/AMM/weber/index.shtml">Hendrik Weber</a>. I was part of the <a href="https://samba.ac.uk/"> EPSRC Centre for Doctoral Training in Statistical Applied Mathematics (SAMBa)</a>.
+</td></tr></table>
+   </div> 
+</div>
 
 
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Papers')">Papers by Area</button>
+  <button class="tablinks" onclick="openCity(event, 'allpapers')">Papers by Publication Date</button>
+  <button class="tablinks" onclick="openCity(event, 'Students')">Students</button>
+  <button class="tablinks" onclick="openCity(event, 'Talks')">Talks</button>
+  <button class="tablinks" onclick="openCity(event, 'Teaching')">Teaching</button>
+  <button class="tablinks" onclick="openCity(event, 'Blog posts')">Blog posts</button>
+</div>
+
+<!-- Tab content -->
+<div id="Papers" class="tabcontent">
 
 
-<dt>E-mail Address:</dt> <dd><a href="mailto:sbruno@ed.ac.uk">sbruno@ed.ac.uk</a></dd>
- <!--  <dt> (Old) Job title in Bath: </dt> <dd>Mathematical Innovation Research Associate </dd>
-   <dt>(Old) Divisions in Bath: </dt>  <ul>   <li>  <a href="https://imibath.ac.uk/"> Institute for Mathematical Innovation</a> (<a href="https://imibath.ac.uk/news/imi-mirf-beate-ehrhardt-explains-what-is-the-imi/">What is the IMI?</a>)      </li>  </ul>
- <ul>  <li> <a href="https://www.bath.ac.uk/departments/department-of-mathematical-sciences/"> Department of Mathematical Sciences </a>   </li>  </ul>
-<dt>(Old) Organisation: </dt> <dd>  University of Bath  </dd> -->
-  <!-- <dt>Program of Study at the University of Bath: </dt> <dd>Integrated PhD Statistical Applied Mathematics (<a href="https://www.bath.ac.uk/centres-for-doctoral-training/epsrc-centre-for-doctoral-training-in-statistical-applied-mathematics-samba/">SAMBa</a> CDT)</dd>  -->
-
-  
-  
-  <dt> Research Interests: </dt> <dd> Foundational Research in Artificial Intelligence, Algorithms and Stochastic Analysis, in particular
- <ul> <li>   Deep Learning and Diffusion-based Algorithms in Optimisation   </li> </ul>
-<ul> <li> Stochastic Partial Differential Equations  </li> </ul>
-</dd>
-       
-   <dt> Publication in peer-reviewed journal: </dt>  <dd> <b> Optimal regularity in time and space for stochastic porous medium equations</b>, with <a href="http://www.bgess.de/"> Benjamin Gess</a>  and <a href="https://scholar.google.co.uk/citations?user=4EU6Mc0-lkgC&hl=de"> Hendrik Weber</a> </dd>   
-                        <dd>   Published in the  <a href="https://projecteuclid.org/journals/annals-of-probability/volume-50/issue-6/Optimal-regularity-in-time-and-space-for-stochastic-porous-medium/10.1214/22-AOP1583.short"> Annals of Probability</a>, Vol. 50, No. 6, 2288-2343. </dd> 
-     <dd> Accepted version available on  <a href="https://arxiv.org/abs/2110.01637"> arXiv</a>, <a href="https://arxiv.org/pdf/2110.01637.pdf">pdf</a>, 67 pages. </dd>
-    <dt> Ph.D Supervisor at the University of Bath: </dt> <dd> Prof. Dr. <a href="https://www.uni-muenster.de/AMM/weber/index.shtml"> Hendrik Weber</a> <br>
-     <dt> External Examiner Ph.D Viva: </dt> <dd> Prof. <a href="http://users.dma.unipi.it/flandoli/"> Franco Flandoli</a> (Scuola Normale Superiore di Pisa) <br>
-     <dt> Internal Examiner Ph.D Viva: </dt> <dd> Prof. Dr. <a href="https://people.bath.ac.uk/mapamgc/"> Alexander Cox</a> (University of Bath) <br>
-       <dt> Ph.D Program of Study at the University of Bath: </dt> <dd> <a href="https://samba.ac.uk/">Integrated PhD in Statistical Applied Mathematics</a> at the University of Bath (EPSRC Centre for Doctoral Training SAMBa)</dd>  
-       <!-- Prof. <a href="https://researchportal.bath.ac.uk/en/persons/manuel-del-pino"> Manuel Del Pino </a> <br>  </dd> -->
- <dt> Profiles:     </dt>  <ul> <li>  <a href="https://www.linkedin.com/in/stefano-bruno-phd-5a69ba1b1/">  Linkedin </a> </li>  </ul>
-                           <ul> <li>  <a href="https://www.researchgate.net/profile/Stefano-Bruno-2"> ResearchGate  </a> </li>  </ul>
-                           <ul> <li>  <a href="https://scholar.google.com/citations?user=Fwfa6cAAAAAJ&hl=en&oi=sra"> Google Scholar  </a> </li>  </ul>
-                           <ul> <li>  <a href="https://orcid.org/0000-0001-6714-244X?lang=en"> ORCID </a> </li>  </ul>
-           </dd>
-
-    <dt> Research visits: </dt> 
-			 </dt> <ul>   <li>  Invited by Prof. <a href="https://sites.google.com/view/dlim/"> Dong-Young Lim</a> to visit the Machine Learning and Finance Laboratory </li> 
-                           at <a href="https://ie.unist.ac.kr/"> Ulsan National Institute of Science and Technology</a> (UNIST) in Ulsan, South Korea (May 2023)  </ul>
-			  <ul>   <li>  Invited by Prof. Dr. <a href="http://www.bgess.de/"> Benjamin Gess</a> to visit the research group in Stochastic Partial Differential Equations </li> 
-                           at the <a href="https://www.mis.mpg.de/"> Max–Planck Institut for Mathematics in the Sciences</a> (MIS) in Leipzig, Germany (December 2019)  </ul>
-                          <ul>  <li>  Scientific programme in <a href="https://www.newton.ac.uk/event/srq/"> Scaling limits, rough paths, quantum field theory</a>, Isaac Newton Institute, University of Cambridge </li> 
-                     Invited Participant, 26th-30th November and 10th-14th December 2018 </ul>
-     <dt> Talks: </dt> 
-
-   <ul> <li> <a href="https://blogs.ed.ac.uk/nbps/past-seminar/"> North British Probability Workshop</a>,  University of Edinburgh, 3rd May 2023 </li>
-              Invited Talk, Optimal regularity in time and space for stochastic porous medium equations 
-                 </ul>
-       <ul> <li> <a href="https://bicmr.pku.edu.cn/content/show/46-2618.html">BICMR Analysis and PDE seminar</a>, Peking University, China, 16th December 2021 </li>
-                 Invited Talk, Optimal regularity in time and space for stochastic porous medium equations 
-                 </ul>
-             <ul> <li> <a href="https://www.sfb1283.uni-bielefeld.de/talks/view/12611">Bielefeld Stochastic Afternoon</a>, Bielefeld University, Germany, 15th December 2021 </li>
-                 Invited Talk, Optimal regularity in time and space for stochastic porous medium equations 
-                 </ul>
-        <ul> <li> <a href="https://www.bath.ac.uk/case-studies/probability-seminars/">Prob-L@B internal monthly seminar</a>, University of Bath, 13th December 2021 </li>
-                 Invited Talk, Optimal regularity in time and space for stochastic porous medium equations 
-                 </ul>
-       <ul> <li>  <a href="https://katdoesmaths.me/SAMBa-Conference/"> SAMBa Conference 2021</a>, University of Bath, 5th-7th July 2021   </li>
-             Invited Talk, Regularity in time and space for stochastic porous media equations   
-             </ul>  
-          <ul>   <li> <a href="https://sites.google.com/site/welcomehomeunito/welcome-home-2020"> Welcome Home Unito 2020</a>, University of Turin, Italy, 21st-22nd December 2020   </li>
-             Invited Talk, Regularity in time and space for stochastic porous media equations  
-        </ul>                   
-    <dt> Conferences and Research schools attended: </dt>
-        <ul>   <li>  <a href="https://www.icms.org.uk/ICSAA"> 11th International Conference on Stochastic Analysis and its Applications</a>, International Centre for Mathematical Sciences, Edinburgh, 26th-30th June 2023  </li>  </ul>
-        <ul>   <li>  <a href="https://www.turing.ac.uk/research/theory-and-method-challenge-fortnights/accelerating-generative-models-and-nonconvex"> Accelerating Generative Models and Nonconvex Optimization</a>, Alan Turing Institute, London, 23rd March 2023   </li>  </ul>
-       <ul>   <li>  <a href="https://conferences.cirm-math.fr/2322.html"> Pathwise Stochastic Analysis and Applications</a>, CIRM, Luminy, France, 8th-12th March 2021   </li>  </ul>
-          
-         <ul>   <li> 41st Conference on Stochastic Processes and their Applications, Northwestern University, Evanston, USA, 8th-12th July 2019    </li>  </ul>
-          <ul>  <li> <a href="https://www.imperial.ac.uk/probability-pdes-physics-conference-2019/"> Paths between Probability, PDEs, and Physics</a>, Imperial College London, 1st-5th July 2019  </li>  </ul>
-         <ul>  <li> <a href="http://www.fields.utoronto.ca/activities/18-19/SPDEs"> Workshop on the Theory and Applications of Stochastic Partial Differential Equations</a>, Fields Institute, Toronto, Canada, 10th-14th June 2019  </li>  </ul>                
-         <ul>  <li> <a href="https://www.wias-berlin.de/workshops/NDSA2019/"> New Directions in Stochastic Analysis: Rough Paths, SPDEs and Related Topics</a>, Weierstrass Institute, Berlin, Germany, 18th-22nd March 2019 </li>  </ul>
-         <ul>  <li> <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/math/prof/ana/workshops-tagungen/springschool-random-interfaces/"> Spring School on Random Interfaces</a>, University of Augsburg, Germany, 13th-15th March 2019 </li>  </ul>
-         <ul>  <li>  Scientific programme in <a href="https://www.newton.ac.uk/event/srq/"> Scaling limits, rough paths, quantum field theory</a>, Isaac Newton Institute, University of Cambridge </li> 
-                     Invited Participant, 26th-30th November and 10th-14th December 2018 </ul>
-         <ul>  <li> <a href="https://www.math-berlin.de/academics/summer-schools/2017/randgraph"> BMS Summer School: Probabilistic and statistical methods for networks</a>, TU Berlin, Germany, 21st August-1st September 2017 </li>  </ul>
-         <ul>  <li> 26th Jyväskylä Summer School: Lévy and Feller Processes and Applications, University of Jyväskylä,  Finland, 8th-12th August 2016  </li>  </ul>     
+<div class="responsive">
+  <div class="gallery">
+       <img src="generative_models.png" alt="Cinque Terre" height="500" width = "auto" onclick="openCity(event, 'Generativemodels')" onmouseover="" style="cursor: pointer;">
+    <div class="desc">	<h4>Generative Models</h4></div>
+  </div>
+<br>
+</div>
 
 
-    <dt> Teaching at the University of Bath: </dt> <ul>  <li> <a href="https://www.bath.ac.uk/catalogues/2020-2021/ma/MA20224.html"> Probability 2A</a> (Semester 1, Academic years: 2020/2021, 2021/2022) </li>  </ul>
-                           <ul>  <li>  <a href="https://www.bath.ac.uk/catalogues/2020-2021/ma/MA20223.html">  Vector Calculus and PDEs</a> (Semester 2, Academic year: 2019/2020) </li>  </ul>
-                           <ul>  <li>  <a href="https://www.bath.ac.uk/catalogues/2020-2021/ma/MA20218.html"> Analysis 2A</a> (Semester 1, Academic year: 2019/2020) </li>  </ul>
-                           <ul>  <li> <a href="https://www.bath.ac.uk/catalogues/2020-2021/ma/MA10207.html"> Analysis 1</a> (Semester 1-2, Academic years: 2019/2020, 2020/2021) </li>  </ul>
-    
-     <ul>  <li> <a href="https://www.bath.ac.uk/catalogues/2020-2021/ma/MA30062.html"> Analysis of nonlinear ODEs </a> (Semester 2, Academic year: 2020/2021) </li>  </ul>
-                                  <ul>  <li> <a href="https://www.bath.ac.uk/catalogues/2020-2021/ma/MA30059.html"> Mathematical methods 2 </a> (Semester 2, Academic year: 2020/2021) </li>  </ul>
+<div class="responsive">
+  <div class="gallery">
+      <img src="representation_learning.png" alt="Forest" height="500" width = "auto" onclick="openCity(event, 'replearning')" onmouseover="" style="cursor: pointer;">
+    <div class="desc">	<h4>Representation Learning</h4></div>
+  </div>
+<br>
+</div>
 
-      <dt> SAMBa Integrative Think Tanks (ITTs): </dt>
-<ul> <li> <a href="https://www.bath.ac.uk/events/integrative-think-tank-16/"> ITT16</a>, University of Bath, 13th-17th June 2022      </li>  
-                Industrial partners: The French Alternative Energies and Atomic Energy Commission (CEA) and Schlumberger      </ul>
-       <ul> <li> <a href="https://www.bath.ac.uk/events/integrative-think-tank-12/"> ITT12</a>, University of Bath, 7th-11th September 2020      </li>  
-                Industrial partners: Novartis and Rolls-Royce      </ul>
-        <ul> <li> <a href="https://www.bath.ac.uk/announcements/making-waves-at-sambas-11th-integrative-think-tank/"> ITT11</a>, University of Bath, 27th-31st January 2020      </li>  
-                Industrial partners: BT and  Centre for Photonics and Photonic Materials      </ul>
-         <ul> <li> <a href="https://www.bath.ac.uk/announcements/itt9-delivers-big-bangs-and-flashes-of-brilliance-under-theme-of-thunder-and-lighting/"> ITT9</a>, University of Bath, 28th January-1st February  2019      </li>  
-                Industrial partners: Willis Towers Watson and  Diamond Light Source      </ul>
-         <ul> <li> <a href="https://www.bath.ac.uk/announcements/itt9-delivers-big-bangs-and-flashes-of-brilliance-under-theme-of-thunder-and-lighting/"> ITT8</a>, University of Bath, 11th-15th June  2018      </li>  
-                Industrial partners: Office for National Statistics,  Bath Department of Biology & Biochemistry and 
-                Centro para el Desarrollo de la Investigacin Cientca (CEDIC) </ul>
-         <ul> <li> <a href="https://www.bath.ac.uk/announcements/exploring-the-natural-environment-at-7th-successful-integrative-think-tank/"> ITT7</a>, University of Bath, 29th January-2nd February  2018      </li>  
-                Industrial partners:  Environment Agency and National Physical Laboratory
-</dl>
-<!--  <dt>(Old) Postal Address in Bath: </dt> <dd><address>
-Dr Stefano Bruno<br>
-Wessex House 4.27<br>
-Institute for Mathematical Innovation<br>
-University of Bath<br>
-Claverton Down<br>
-Bath<br>
-BA2 7AY<br>
-United Kingdom<br>
-   </address></dd> -->
-<!-- <dt>Telephone: </dt> <dd>5632</dd> -->
+<div class="responsive">
+  <div class="gallery">
+      <img src="NLP.png" alt="Northern Lights" height="500" width = "auto" onclick="openCity(event, 'NLP')" onmouseover="" style="cursor: pointer;">
+    <div class="desc">	<h4>Neural Language Models</h4></div>
+  </div>
+<br>
+</div>
 
-  <!-- Below, there is a bit of text with a hyperlink to the
-  University of Bath Home page. The link consists of http: to indicate
-  that you want to use the Hyper Text Transfer Protocol. It then has
-  the name of the machine where the page resides and then the document
-  you wish to link to. It then has a bit of text describing the link.
-  This is followed by the </a> tag. A link like this is called an
-  anchor and is what the user will click on (if he is using a mouse). -->
+<div class="responsive">
+  <div class="gallery">
+    <img src="space_cows.png" alt="Mountains" height="500" width = "auto" onclick="openCity(event, 'oodgeneralization')" onmouseover="" style="cursor: pointer;">
+    <div class="desc">	<h4>Out-of-Distribution Generalization</h4></div>
+  </div>
+  <br>
+</div>
 
-  <p class="footer">Go to the <a href="http://www.bath.ac.uk/">University of Bath</a> Home Page.</p>
+<div class="responsive">
+  <div class="gallery">
+      <img src="aiforscience.png" alt="Northern Lights" height="500" width = "auto" onclick="openCity(event, 'aiforscience')" onmouseover="" style="cursor: pointer;">
+    <div class="desc">	<h4>AI for Scientific Applications</h4></div>
+  </div>
+  <br>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="randwalk.png" alt="Northern Lights" height="500" width = "auto" onclick="openCity(event, 'samplingopt')" onmouseover="" style="cursor: pointer;">
+    <div class="desc">	<h4>Sampling and Optimization</h4></div>
+  </div>
+  <br>
+</div>
+
+
+
+</div>
+
+<div id="Generativemodels" class="tabcontent">
+
+<h4><strong> Papers on Generative Models (sorted by date)</strong></h4> 
+
+<ul>
+<li> <a href="https://arxiv.org/abs/2306.01993"> Provable Benefits of Score Matching. </a> With Chirag Pabbaraju, Dhruv Rohatgi, Anish Sevekari, Holden Lee and Ankur Moitra. <i> ICML 2023 Workshop on Structured Probabilistic Inference & Generative Modeling, <font color="#BF40BF"> Oral.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2306.09332"> Fit Like You Sample: Sample-Efficient Generalized Score Matching from Fast Mixing Markov Chains. </a> With Yilong Qin. <i> Manuscript, 2023 </i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.00726"> Statistical Efficiency of Score Matching: The View from Isoperimetry. </a> With Frederic Koehler and Alexander Heckett. <i> ICLR 2023, <font color="#BF40BF"> Oral Equivalent, Top 5% of Papers.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.00189"> Pitfalls of Gaussians as a noise distribution in NCE </a> With Holden Lee, Chirag Pabbaraju and Anish Sevekari. <i> ICLR 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2202.09305"> Masked prediction tasks: a parameter identifiability view.</a> With Bingin Liu, Daniel Hsu and Pradeep Ravikumar. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2110.11271"> Analyzing and improving the optimization landscape of noise-contrastive estimation. </a> With Bingbin Liu, Elan Rosenfeld and Pradeep Ravikumar. <i> ICLR 2022, <font color="#BF40BF"> Spotlight.</font></i> </li> 
+<li> <a href="https://arxiv.org/abs/2110.11271"> Variational autoencoders in the presence of low-dimensional data: landscape and implicit bias. </a> With Frederic Koehler, Viraj Mehta and Chenghui Zhou<i> ICLR 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2107.04652"> The Effects of Invertibility on the Representational Complexity of Encoders in Variational Autoencoders.</a> With Divyansh Pareek. <i> ICLR 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2103.02740"> Contrastive learning of strong-mixing continuous-time stochastic processes. </a> With Bingbin Liu and Pradeep Ravikumar. <i> AISTATS 2021.</i></li> 
+<li> <a href="https://arxiv.org/abs/2107.02951"> Universal Approximation for Log-concave Distributions using Well-conditioned Normalizing Flows.</a> With Holden Lee, Chirag Pabbaraju and Anish Sevekari. <i> NeurIPS 2021.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2010.01155"> Representational aspects of depth and conditioning in normalizing flows. </a> With Frederic Koehler and Viraj Mehta. <i> ICML 2021.</i> </li> 
+<li> <a href="https://arxiv.org/abs/1907.00030"> Benefits of Overparameterization in Single-Layer Latent Variable Generative Models. </a> With Rares Buhai, Yoni Halpern and David Sontag. <i> ICML 2020. </i>  </li>  
+<li> <a href="https://openreview.net/forum?id=rJfW5oA5KQ"> Approximability of Discriminators Implies Diversity in GANs. </a> With Yu Bai and Tengyu Ma. <i> ICLR 2019. </i>  </li>
+<li> <a href="https://arxiv.org/pdf/1702.07028.pdf"> On the ability of neural nets to express distributions. </a> With Holden Lee, Rong Ge, Tengyu Ma, Sanjeev Arora. <i> COLT 2017 </i> </li>
+<li> <a href="https://openreview.net/forum?id=BJehNfW0-"> Do GANs learn the distribution? Some theory and empirics.  </a> With Sanjeev Arora and Yi Zhang. <i> ICLR 2018 </i>  </li>
+<li> <a href="https://arxiv.org/pdf/1702.07028.pdf"> On the ability of neural nets to express distributions. </a> With Holden Lee, Rong Ge, Tengyu Ma, Sanjeev Arora. <i> COLT 2017 </i> </li>
+<li> <a href="https://arxiv.org/abs/1612.08795"> Provable learning of noisy-or networks. </a> With Sanjeev Arora, Rong Ge, and Tengyu Ma. <i> STOC 2017 </i> </li>
+<li> <a href="http://arxiv.org/abs/1503.06567"> On some provably correct cases of variational inference for topic models. </a> With Pranjal Awasthi. <i> NeurIPS 2015, <font color="#BF40BF"> Spotlight.</font></i> </li>
+</ul>
+</div>
+
+
+<div id="oodgeneralization" class="tabcontent">
+
+<h4><strong> Papers on Out-of-Distribution Generalization (sorted by date)</strong></h4> 
+
+<ul>
+<li> <a href="https://arxiv.org/abs/2203.14383"> Continual learning: a feature extraction formalization, an efficient algorithm, and fundamental obstructions. </a> With Binghui Peng. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2106.09913"> Iterative Feature Matching: Toward Provable Domain Generalization with Logarithmic Environments. </a> With Yining Chen, Elan Rosenfeld, Mark Sellke and Tengyu Ma. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2202.06856"> Domain-Adjusted Regression or: ERM May Already Learn Features Sufficient for Out-of-Distribution Generalization. </a> With Elan Rosenfeld and Pradeep Ravikumar. <i> NeurIPS 2022 Workshop on Distribution Shift, <font color="#BF40BF"> Spotlight.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2102.13128"> An Online Learning Approach to Interpolation and Extrapolation in Domain Generalization. </a> With Elan Rosenfeld and Pradeep Ravikumar. <i> AISTATS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2010.05761"> The Risks of Invariant Risk Minimization. </a> With Elan Rosenfeld and Pradeep Ravikumar. <i> ICLR 2021.</i> </li> 
+
+</ul>
+</div>
+
+
+<div id="replearning" class="tabcontent">
+
+<h4><strong> Papers on Representation Learning (sorted by date)</strong></h4> 
+<ul> 
+<li> <a href="https://arxiv.org/abs/2306.00788"> Understanding Augmentation-based Self-Supervised Representation Learning via RKHS Approximation. </a> With Runtian Zhai, Bingbin Liu, Zico Kolter and Pradeep Ravikumar. <i> Manuscript 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2303.04245"> How Do Transformers Learn Topic Structure: Towards a Mechanistic Understanding </a> With Yuchen Li and Yuanzhi Li. <i> ICML 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2203.14383"> Continual learning: a feature extraction formalization, an efficient algorithm, and fundamental obstructions. </a> With Binghui Peng. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2106.09913"> Iterative Feature Matching: Toward Provable Domain Generalization with Logarithmic Environments. </a> With Yining Chen, Elan Rosenfeld, Mark Sellke and Tengyu Ma. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2202.06856"> Domain-Adjusted Regression or: ERM May Already Learn Features Sufficient for Out-of-Distribution Generalization. </a> With Elan Rosenfeld and Pradeep Ravikumar. <i> NeurIPS 2022 Workshop on Distribution Shift, <font color="#BF40BF"> Spotlight.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2202.09305"> Masked prediction tasks: a parameter identifiability view.</a> With Bingin Liu, Daniel Hsu and Pradeep Ravikumar. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2203.15702"> Contrasting the landscape of contrastive and non-contrastive learning. </a> With Ashwini Pokle, Jinjin Tian and Yuchen Li. <i> AISTATS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/1907.00030"> Benefits of Overparameterization in Single-Layer Latent Variable Generative Models. </a> With Rares Buhai, Yoni Halpern and David Sontag. <i> ICML 2020. </i>  </li> 
+<li> <a href="https://arxiv.org/abs/2008.04510"> On Learning Language-Invariant Representations for Universal Machine Translation.</a> With Han Zhao, Junjie Hu. <i> ICML 2020. </i>  </li>   
+<li> <a href="https://openreview.net/forum?id=rJfW5oA5KQ"> Approximability of Discriminators Implies Diversity in GANs. </a> With Yu Bai and Tengyu Ma. <i> ICLR 2019. </i>  </li>
+<li> <a href="https://openreview.net/forum?id=rJgTTjA9tX&noteId=ByeUreMZhX"> Representational Power of ReLU Networks and Polynomial Kernels: Beyond Worst-Case Analysis. </a> With Frederic Koehler. <i> ICLR 2019. </i>  </li>
+<li> <a href="https://openreview.net/forum?id=BJehNfW0-"> Do GANs learn the distribution? Some theory and empirics.  </a> With Sanjeev Arora and Yi Zhang. <i> ICLR 2018 </i>  </li>
+<li> <a href="https://arxiv.org/pdf/1702.07028.pdf"> On the ability of neural nets to express distributions. </a> With Holden Lee, Rong Ge, Tengyu Ma, Sanjeev Arora. <i> COLT 2017 </i> </li>
+<li> <a href="https://arxiv.org/abs/1706.04601"> Provable Benefits of Representation Learning. </a> With Sanjeev Arora. <i> Manuscript 2017 </i> </li>
+
+</ul> 
+</div>
+
+<div id="aiforscience" class="tabcontent">
+<h4><strong> Papers on AI for Science (sorted by date)</strong></h4> 
+<ul>
+<li> <a href="https://arxiv.org/abs/2210.12101"> Neural Network Approximations of PDEs Beyond Linearity: Representational Perspective. </a> With Tanya Marwah, Zachary C. Lipton and Jianfeng Lu <i> ICML 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2103.02138"> Parametric Complexity Bounds for Approximating PDEs with Neural Networks. </a> With Tanya Marwah and Zachary C. Lipton. <i> NeurIPS 2021, <font color="#BF40BF"> Spotlight.</font></i> </li> 
+
+</ul>
+</div>
+
+<div id="samplingopt" class="tabcontent">
+<h4><strong> Papers on Sampling and Optimization (sorted by date)</strong></h4> 
+<ul>
+
+<li> <a href="https://arxiv.org/abs/2306.01993"> Provable Benefits of Score Matching. </a> With Chirag Pabbaraju, Dhruv Rohatgi, Anish Sevekari, Holden Lee and Ankur Moitra. <i> ICML 2023 Workshop on Structured Probabilistic Inference & Generative Modeling, <font color="#BF40BF"> Oral.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2306.09332"> Fit Like You Sample: Sample-Efficient Generalized Score Matching from Fast Mixing Markov Chains. </a> With Yilong Qin. <i> Manuscript, 2023 </i> </li> 
+<li> <a href="https://arxiv.org/abs/2303.04245"> How Do Transformers Learn Topic Structure: Towards a Mechanistic Understanding </a> With Yuchen Li and Yuanzhi Li. <i> ICML 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.00726"> Statistical Efficiency of Score Matching: The View from Isoperimetry. </a> With Frederic Koehler and Alexander Heckett. <i> ICLR 2023, <font color="#BF40BF"> Oral Equivalent, Top 5% of Papers.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.00189"> Pitfalls of Gaussians as a noise distribution in NCE </a> With Holden Lee, Chirag Pabbaraju and Anish Sevekari. <i> ICLR 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.00189"> Sampling Approximately Low-Rank Ising Models: MCMC meets Variational Methods. </a> With Frederic Koehler and Holden Lee. <i> COLT 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2110.11271"> Analyzing and improving the optimization landscape of noise-contrastive estimation. </a> With Bingbin Liu, Elan Rosenfeld and Pradeep Ravikumar. <i> ICLR 2022, <font color="#BF40BF"> Spotlight.</font></i> </li> 
+<li> <a href="https://arxiv.org/abs/2110.11271"> Variational autoencoders in the presence of low-dimensional data: landscape and implicit bias. </a> With Frederic Koehler, Viraj Mehta and Chenghui Zhou<i> ICLR 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2203.15702"> Contrasting the landscape of contrastive and non-contrastive learning. </a> With Ashwini Pokle, Jinjin Tian and Yuchen Li. <i> AISTATS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2103.02740"> Contrastive learning of strong-mixing continuous-time stochastic processes. </a> With Bingbin Liu and Pradeep Ravikumar. <i> AISTATS 2021.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2010.00137"> Efficient sampling from the Bingham distribution. </a> With Rong Ge, Holden Lee and Jianfeng Lu.  <i> ALT 2021.  </i>  </li>
+    <li> <a href="https://arxiv.org/abs/2002.05576"> Fast Convergence for Langevin Diffusion with Matrix Manifold Structure.</a> With Ankur Moitra.  <i> Manuscript  2020</i>  </li>
+  <li> <a href="https://arxiv.org/abs/1710.02736"> Beyond Log-concavity: Provable Guarantees for Sampling Multi-modal Distributions using Simulated Tempering Langevin Monte Carlo. </a> With Rong Ge and Holden Lee.  <i> NeurIPS 2018  </i>  </li>
+ <li> <a href=" https://arxiv.org/abs/1808.07226"> Mean-field approximation, convex hierarchies, and the optimality of correlation rounding: a unified perspective. </a> With Vishesh Jain and Frederik Koehler. <i> STOC 2019. </i> </li>
+  <li> <a href="https://arxiv.org/abs/1905.13283">  Sum-of-squares meets square loss: Fast rates for agnostic tensor completion. </a> With Dylan J. Foster. <i> COLT 2019 </i> </li>   
+<li> <a href="http://arxiv.org/abs/1607.03183">  How to calculate partition functions using convex programming hierarchies: provable bounds for variational methods.</a>  <i> COLT 2016, <font color="#BF40BF"> long talk. </font> </i> </li>
+<li> <a href="http://arxiv.org/abs/1607.03360"> Approximate maximum entropy principles via Goemans-Williamson with applications to provable variational methods. </a> With Yuanzhi Li. <i> NeurIPS 2016 </i> </li>
+<li> <a href="https://arxiv.org/abs/1611.03819"> Non-negative matrix factorization using a decode-and-update approach. </a> With Yuanzhi Li and Yingyu Liang.  <i> NeurIPS 2016 </i>  </li>
+<li><a href="http://arxiv.org/abs/1602.02262"> Recovery guarantee of weighted low-rank approximation via alternating minimization. </a> With Yuanzhi Li and Yingyu Liang. <i> ICML 2016  </i> </li>
+<li> <a href="https://arxiv.org/abs/1612.08795"> Provable learning of noisy-or networks. </a> With Sanjeev Arora, Rong Ge, and Tengyu Ma. <i> STOC 2017 </i> </li>
+  <li> <a href="https://papers.nips.cc/paper/6576-algorithms-and-matching-lower-bounds-for-approximately-convex-optimization.pdf"> Tight algorithms and lower bounds for approximately convex optimization. </a> With Yuanzhi Li.  <i> NeurI
+PS 2016 </i>  </li>
+<li> <a href="http://arxiv.org/abs/1503.06567"> On some provably correct cases of variational inference for topic models. </a> With Pranjal Awasthi. <i> NeurIPS 2015, <font color="#BF40BF"> Spotlight.</font> </i> </li>
+     <li> <a href="http://arxiv.org/abs/1503.02193"> Label optimal regret bounds for online local learning. </a> With Pranjal Awasthi, Moses Charikar and Kevin A. Lai. <i> COLT 2015 </i>  </li>
+
+</ul>
+</div>
+
+<div id="NLP" class="tabcontent"> 
+<h4><strong> Papers on Neural Language Models (sorted by date)</strong></h4> 
+<ul>
+<li> <a href="https://arxiv.org/abs/2303.04245"> How Do Transformers Learn Topic Structure: Towards a Mechanistic Understanding </a> With Yuchen Li and Yuanzhi Li. <i> ICML 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2106.01580"> The Limitations of Limited Context for Constituency Parsing. </a> With Yuchen Li. <i> ACL 2021.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2008.04510"> On Learning Language-Invariant Representations for Universal Machine Translation.</a> With Han Zhao, Junjie Hu. <i> ICML 2020. </i>  </li>  
+<li> <a href="http://arxiv.org/abs/1601.03764"> Linear algebraic structure of word senses, with applications to polysemy. </a> With Sanjeev Arora, Yuanzhi Li, Yingyu Liang and Tengyu Ma. <i>  Transactions of the Association for Computational Linguistics (TACL), 2018 </i> </li>
+<li> <a href="http://www.aclweb.org/anthology/W17-1902 "> Automated WordNet Construction Using Word Embeddings. </a> With Mikhail Khodak, Christiane Fellbaum, Sanjeev Arora. <i> EACL Workshop on Sense, Concept and Entity Representations and their Applications, 2017</i> </li>
+<li> <a href="http://arxiv.org/abs/1502.03520"> RAND-WALK: a latent variable model approach to word embeddings. </a> With Sanjeev Arora, Yuanzhi Li, Yingyu Liang and Tengyu Ma. <i> Transactions of the Association for Computational Linguistics (TACL), 2016 </i>  </li>
+
+</ul>
+</div>
+
+
+<div id="allpapers" class="tabcontent">
+<h4><strong> All papers (sorted by date)</strong></h4> 
+<ul>
+<li> <a href="https://arxiv.org/abs/2306.01993"> Provable Benefits of Score Matching. </a> With Chirag Pabbaraju, Dhruv Rohatgi, Anish Sevekari, Holden Lee and Ankur Moitra. <i> ICML 2023 Workshop on Structured Probabilistic Inference & Generative Modeling, <font color="#BF40BF"> Oral.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2306.09332"> Fit Like You Sample: Sample-Efficient Generalized Score Matching from Fast Mixing Markov Chains. </a> With Yilong Qin. <i> Manuscript, 2023 </i> </li> 
+<li> <a href="https://arxiv.org/abs/2306.00788"> Understanding Augmentation-based Self-Supervised Representation Learning via RKHS Approximation. </a> With Runtian Zhai, Bingbin Liu, Zico Kolter and Pradeep Ravikumar. <i> Manuscript 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2303.04245"> How Do Transformers Learn Topic Structure: Towards a Mechanistic Understanding </a> With Yuchen Li and Yuanzhi Li. <i> ICML 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.12101"> Neural Network Approximations of PDEs Beyond Linearity: Representational Perspective. </a> With Tanya Marwah, Zachary C. Lipton and Jianfeng Lu <i> ICML 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.00726"> Statistical Efficiency of Score Matching: The View from Isoperimetry. </a> With Frederic Koehler and Alexander Heckett. <i> ICLR 2023, <font color="#BF40BF"> Oral Equivalent, Top 5% of Papers.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.00189"> Pitfalls of Gaussians as a noise distribution in NCE </a> With Holden Lee, Chirag Pabbaraju and Anish Sevekari. <i> ICLR 2023.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2210.00189"> Sampling Approximately Low-Rank Ising Models: MCMC meets Variational Methods. </a> With Frederic Koehler and Holden Lee. <i> COLT 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2202.09305"> Masked prediction tasks: a parameter identifiability view.</a> With Bingin Liu, Daniel Hsu and Pradeep Ravikumar. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2203.14383"> Continual learning: a feature extraction formalization, an efficient algorithm, and fundamental obstructions </a> With Binghui Peng. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2106.09913"> Iterative Feature Matching: Toward Provable Domain Generalization with Logarithmic Environments. </a> With Yining Chen, Elan Rosenfeld, Mark Sellke and Tengyu Ma. <i> NeurIPS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2202.06856"> Domain-Adjusted Regression or: ERM May Already Learn Features Sufficient for Out-of-Distribution Generalization. </a> With Elan Rosenfeld and Pradeep Ravikumar. <i> NeurIPS 2022 Workshop on Distribution Shift, <font color="#BF40BF"> Spotlight.</font> </i> </li> 
+<li> <a href="https://arxiv.org/abs/2102.13128"> An Online Learning Approach to Interpolation and Extrapolation in Domain Generalization. </a> With Elan Rosenfeld and Pradeep Ravikumar. <i> AISTATS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2203.15702"> Contrasting the landscape of contrastive and non-contrastive learning. </a> With Ashwini Pokle, Jinjin Tian and Yuchen Li. <i> AISTATS 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2110.11271"> Analyzing and improving the optimization landscape of noise-contrastive estimation. </a> With Bingbin Liu, Elan Rosenfeld and Pradeep Ravikumar. <i> ICLR 2022, <font color="#BF40BF"> Spotlight.</font></i> </li> 
+<li> <a href="https://arxiv.org/abs/2107.04652"> The Effects of Invertibility on the Representational Complexity of Encoders in Variational Autoencoders.</a> With Divyansh Pareek. <i> ICLR 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2110.11271"> Variational autoencoders in the presence of low-dimensional data: landscape and implicit bias. </a> With Frederic Koehler, Viraj Mehta and Chenghui Zhou<i> ICLR 2022.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2103.02138"> Parametric Complexity Bounds for Approximating PDEs with Neural Networks. </a> With Tanya Marwah and Zachary C. Lipton. <i> NeurIPS 2021, <font color="#BF40BF"> Spotlight.</font></i> </li> 
+<li> <a href="https://arxiv.org/abs/2107.02951"> Universal Approximation for Log-concave Distributions using Well-conditioned Normalizing Flows.</a> With Holden Lee, Chirag Pabbaraju and Anish Sevekari. <i> NeurIPS 2021.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2103.02740"> Contrastive learning of strong-mixing continuous-time stochastic processes. </a> With Bingbin Liu and Pradeep Ravikumar. <i> AISTATS 2021.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2010.05761"> The Risks of Invariant Risk Minimization. </a> With Elan Rosenfeld and Pradeep Ravikumar. <i> ICLR 2021.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2010.01155"> Representational aspects of depth and conditioning in normalizing flows. </a> With Frederic Koehler and Viraj Mehta. <i> ICML 2021.</i> </li> 
+<li> <a href="https://arxiv.org/abs/2010.00137"> Efficient sampling from the Bingham distribution. </a> With Rong Ge, Holden Lee and Jianfeng Lu.  <i> ALT 2021.  </i>  </li>
+<li> <a href="https://arxiv.org/abs/2106.01580"> The Limitations of Limited Context for Constituency Parsing. </a> With Yuchen Li. <i> ACL 2021.</i> </li> 
+    <li> <a href="https://arxiv.org/abs/2002.05576"> Fast Convergence for Langevin Diffusion with Matrix Manifold Structure.</a> With Ankur Moitra.  <i> Manuscript  2020</i>  </li>
+<li> <a href="https://arxiv.org/abs/2008.04510"> On Learning Language-Invariant Representations for Universal Machine Translation.</a> With Han Zhao, Junjie Hu. <i> ICML 2020. </i>  </li>  
+<li> <a href="https://arxiv.org/abs/1907.00030"> Benefits of Overparameterization in Single-Layer Latent Variable Generative Models. </a> With Rares Buhai, Yoni Halpern and David Sontag. <i> ICML 2020. </i>  </li>  
+<li> <a href="https://openreview.net/forum?id=rJfW5oA5KQ"> Approximability of Discriminators Implies Diversity in GANs. </a> With Yu Bai and Tengyu Ma. <i> ICLR 2019. </i>  </li>
+<li> <a href="https://openreview.net/forum?id=rJgTTjA9tX&noteId=ByeUreMZhX"> Representational Power of ReLU Networks and Polynomial Kernels: Beyond Worst-Case Analysis. </a> With Frederic Koehler. <i> ICLR 2019. </i>  </li>
+<li> <a href="https://openreview.net/forum?id=BJehNfW0-"> Do GANs learn the distribution? Some theory and empirics.  </a> With Sanjeev Arora and Yi Zhang. <i> ICLR 2018 </i>  </li>
+  <li> <a href="https://arxiv.org/abs/1710.02736"> Beyond Log-concavity: Provable Guarantees for Sampling Multi-modal Distributions using Simulated Tempering Langevin Monte Carlo. </a> With Rong Ge and Holden Lee.  <i> NeurIPS 2018  </i>  </li>
+ <li> <a href=" https://arxiv.org/abs/1808.07226"> Mean-field approximation, convex hierarchies, and the optimality of correlation rounding: a unified perspective. </a> With Vishesh Jain and Frederik Koehler. <i> STOC 2019. </i> </li>
+  <li> <a href="https://arxiv.org/abs/1905.13283">  Sum-of-squares meets square loss: Fast rates for agnostic tensor completion. </a> With Dylan J. Foster. <i> COLT 2019 </i> </li>   
+<li> <a href="http://arxiv.org/abs/1601.03764"> Linear algebraic structure of word senses, with applications to polysemy. </a> With Sanjeev Arora, Yuanzhi Li, Yingyu Liang and Tengyu Ma. <i>  Transactions of the Association for Computational Linguistics (TACL), 2018 </i> </li>
+<li> <a href="https://arxiv.org/pdf/1702.07028.pdf"> On the ability of neural nets to express distributions. </a> With Holden Lee, Rong Ge, Tengyu Ma, Sanjeev Arora. <i> COLT 2017 </i> </li>
+<li> <a href="http://www.aclweb.org/anthology/W17-1902 "> Automated WordNet Construction Using Word Embeddings. </a> With Mikhail Khodak, Christiane Fellbaum, Sanjeev Arora. <i> EACL Workshop on Sense, Concept and Entity Representations and their Applications, 2017</i> </li>
+<li> <a href="https://arxiv.org/abs/1706.04601"> Provable Benefits of Representation Learning. </a> With Sanjeev Arora. <i> Manuscript 2017 </i> </li>
+<li> <a href="http://arxiv.org/abs/1502.03520"> RAND-WALK: a latent variable model approach to word embeddings. </a> With Sanjeev Arora, Yuanzhi Li, Yingyu Liang and Tengyu Ma. <i> Transactions of the Association for Computational Linguistics (TACL), 2016 </i>  </li>
+<li> <a href="http://arxiv.org/abs/1607.03183">  How to calculate partition functions using convex programming hierarchies: provable bounds for variational methods.</a>  <i> COLT 2016, <font color="#BF40BF"> long talk.</font> </i> </li>
+<li> <a href="http://arxiv.org/abs/1607.03360"> Approximate maximum entropy principles via Goemans-Williamson with applications to provable variational methods. </a> With Yuanzhi Li. <i> NeurIPS 2016 </i> </li>
+<li> <a href="https://arxiv.org/abs/1611.03819"> Non-negative matrix factorization using a decode-and-update approach. </a> With Yuanzhi Li and Yingyu Liang.  <i> NeurIPS 2016 </i>  </li>
+<li><a href="http://arxiv.org/abs/1602.02262"> Recovery guarantee of weighted low-rank approximation via alternating minimization. </a> With Yuanzhi Li and Yingyu Liang. <i> ICML 2016  </i> </li>
+<li> <a href="https://arxiv.org/abs/1612.08795"> Provable learning of noisy-or networks. </a> With Sanjeev Arora, Rong Ge, and Tengyu Ma. <i> STOC 2017 </i> </li>
+  <li> <a href="https://papers.nips.cc/paper/6576-algorithms-and-matching-lower-bounds-for-approximately-convex-optimization.pdf"> Tight algorithms and lower bounds for approximately convex optimization. </a> With Yuanzhi Li.  <i> NeurI
+PS 2016 </i>  </li>
+<li> <a href="http://arxiv.org/abs/1503.06567"> On some provably correct cases of variational inference for topic models. </a> With Pranjal Awasthi. <i> NeurIPS 2015, <font color="#BF40BF"> Spotlight.</font> </i> </li>
+     <li> <a href="http://arxiv.org/abs/1503.02193"> Label optimal regret bounds for online local learning. </a> With Pranjal Awasthi, Moses Charikar and Kevin A. Lai. <i> COLT 2015 </i>  </li>
+</ul>
+</div>
+
+<div id="Students" class="tabcontent">
+
+<h4><strong> Current Students </strong></h4> 
+<ul>
+<li> <a href="https://www.cs.cmu.edu/~yuchenl4/"> Yuchen Li </a></li>
+<li> <a href="https://clarabing.github.io">Bingbin Liu </a> (co-advised with Pradeep Ravikumar) </li> 
+<li> <a href="https://tm157.github.io"> Tanya Marwah</a> (co-advised with Zachary Lipton) </li>
+<li> <a href="http://www.cs.cmu.edu/~elan"> Elan Rosenfeld </a> (co-advised with Pradeep Ravikumar) </li> 
+<li> Aashay Mehta, Masters in Machine Learning (MSML) Student </li> 
+<li> Yilong Qin, Masters in Machine Learning (MSML) Student </li> 
+</ul>
+
+<h4><strong> Alumni </strong></h4> 
+<ul>
+<li> Deep Karkhanis, Masters in Machine Learning (MSML) Student. </li> 
+<li> Soundarya Krishnan, Masters in Machine Learning (MSML) Student, currently at Apple.  </li> 
+<li> Chirag Pabbaraju, Masters in Machine Learning (MSML) Student, currently pursuing PhD at Stanford University.</li> 
+<li> Divyansh Pareek, Masters in Machine Learning (MSML) Student, currently pursuing PhD at University of Washington.</li> 
+<li> Rares Darius-Buhai, Undergraduate at MIT, currently pursuing PhD at ETH Zurich.</li> 
+</ul>
+
+</div>
+
+<div id="Talks" class="tabcontent">
+
+<ul>
+<li><font color="#003153"> On the Statistical Cost of Score Matching</font></li>
+   <ul> <li>IDSS Stochastics and Statistics Seminar, MIT, 02/2023</li>
+   </ul>
+<li><font color="#003153"> Generalizing to New Distributions via Invariance: Challenges and Opportunities </font></li>
+   <ul> <li>TTIC Workshop on Representation Learning, 08/2022</li>
+   </ul>
+<li><font color="#003153"> Neural Networks and PDEs: when can you evade the curse of dimensionality? </font></li>
+   <ul> <li>CNLS Annual Conference on Physics-Informed Machine Learning, 05/2022</li>
+   </ul>
+<li><font color="#003153"> Langevin diffusion as an algorithmic and representational lens on probabilistic generative models </font></li>
+   <ul> <li>FOCS Workshop on Recent Directions in Machine Learning, 02/2022</li>
+   </ul>
+<li><font color="#003153"> Representational aspects of depth and conditioning in normalizing flows</font></li>
+   <ul> <li>Johns Hopkins MINDS & CIS Seminar, 02/2021</li>
+   </ul>
+  <li><font color="#003153">  Diffusing along manifolds of local optima via Langevin dynamics </font></li>
+   <ul> <li> Microsoft Research New England, 03/19 </li>
+   <li> MIFODS Workshop on Learning with Complex Structure, MIT, 01/20 </li> 
+   </ul>
+  <li><font color="#003153"> Mean-field approximation and variational methods via convex relaxations </font></li>
+  <ul> <li> Harvard Physics and Computation Seminar, 10/18 </li>
+  <li> MIT Seminar on Stochastic Processes, 11/18 </li>  
+   </ul>
+  <li><font color="#003153">  Beyond Log-concavity: Provable Guarantees for Sampling Multi-modal Distributions using Simulated Tempering Langevin Monte Carlo </font></li>
+   <ul> <li> MIT Algorithms and Complexity Seminar, 11/01/17 </li>
+   </ul>
+  <li> <font color="#003153"> Provable algorithms for learning noisy-OR networks  </font> </li>
+    <ul>  <li> STOC (Montreal, 2017) </li>  </ul>
  
-     </body> <!-- This is the end of the document body. -->
+  <li> <font color="#003153"> Theoretical aspects of representation learning </font> </li>
+    <ul>  <li> Simons Institute for the Theory of Computing, 03/27/17 </li>  </ul>
+      
+ <li> <font color="#003153"> New techniques for learning and inference in probabilistic graphical models </font> </li>
+ <ul>       <li> MIT Stochastics and Statistics Seminar, 09/08/17 </li>
+   <li> Microsoft Research Redmond, 02/08/17 </li>  </ul>
+
+
+ <li>  <font color="#003153"> How to calculate partition functions using convex programming hierarchies: provable bounds for variational methods </font></li>
+     <ul>
+        <li> Stanford Theory Seminar, 02/02/17 </li>        
+        <li> Los Alamos National Laboratory, 11/07/16 </li>
+        <li> Rutgers University, 10/19/16 </li>     
+        <li> COLT (New York City, 2016)  <a href="https://www.youtube.com/watch?v=b2cqttSJorQ"> [Video] </a> </li>
+      </ul>  
+       <li>  <font color="#003153"> On some provably correct cases of variational inference for topic models </font></li>
+     <ul>
+       <li> NeurIPS (Montreal, 2015) <a href="http://research.microsoft.com/apps/video/?id=259590"> [Video, talk starts circa 11:45] </a>  </li>
+     </ul>
+  <li>  <font color="#003153"> Random walks on context spaces: towards an explanation of the mysteries of semantic word embeddings </font></li>
+     <ul> 
+       <li> China Theory Week (Jiao Tong University, Shanghai, 2015) </li>
+     </ul>
+   <li> <font color="#003153"> Label optimal regret bounds for online local learning </font></li> 
+     <ul> 
+        <li> COLT (Paris, 2015) <a href="http://videolectures.net/colt2015_risteski_local_learning/"> [Video] </a> </li>
+     </ul>     
+   
+</ul>
+
+
+</div>
+
+<div id="Teaching" class="tabcontent">
+
+<ul>
+<li> Instructor for <a href="https://andrejristeski.github.io/10708-S23/schedule.html"> 10.708 (Probabilistic Graphical Models)</a> at CMU: Spring 2023 </li>
+<li> Instructor for <a href="https://andrejristeski.github.io/10708-F22/schedule.html"> 10.708 (Probabilistic Graphical Models)</a> at CMU: Fall 2022 </li>
+<li> Instructor for <a href="https://andrejristeski.github.io/10708-22/schedule.html"> 10.708 (Probabilistic Graphical Models)</a> at CMU: Spring 2022 </li>
+<li> Instructor for <a href="https://andrejristeski.github.io/10707-S21/syllabus.html"> 10.707 (Advanced Deep Learning)</a> at CMU: Spring 2021 </li>
+<li> Instructor for <a href="https://andrejristeski.github.io/10417-20/syllabus.html"> 10.417 (Intermediate Deep Learning)</a> at CMU: Fall 2020 </li>
+<li> Instructor for <a href="https://andrejristeski.github.io/10707-S20/syllabus.html"> 10.707 (Advanced Deep Learning)</a> at CMU: Spring 2020 </li>
+   <li>Instructor for 18.200A (Principles of Discrete and Applied Mathematics) at MIT: Fall 2017/18 and Fall 2018/19</li>
+</ul>
+
+</div>
+
+<div id="Blog posts" class="tabcontent">
+
+<ul>
+<li><a href="http://www.offconvex.org/2020/09/19/beyondlogconvavesampling"> Beyond log-concave sampling. </a> </li>    
+<li><a href="https://windowsontheory.org/2018/11/11/approximating-partition-functions/"> On approximating partition functions via variational methods. </a> </li>    
+<li> <a href="http://www.offconvex.org/2018/03/12/bigan/"> Theoretical limitations of modern GAN architectures.  </a> </li>
+<li> <a href="http://www.offconvex.org/2017/06/26/unsupervised1/"> Formalizations of representation learning. </a> </li>
+<li> <a href="http://www.offconvex.org/2016/02/14/word-embeddings-2/"> Word embeddings.  </a> </li>
+</ul>
+
+
+</div>
+
+
+</body>
+
 
 </html>
