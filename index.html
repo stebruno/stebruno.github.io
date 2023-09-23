@@ -19,22 +19,6 @@
 </script>
 
 
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-
 
 </head>
 <body>
@@ -64,17 +48,7 @@ More broadly, the goal of my research is principled and mathematical understandi
  
 
 
-</td></tr></table>
-   </div> 
-</div>
 
-
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Papers')">Papers</button>
-  <button class="tablinks" onclick="openCity(event, 'Talks')">Talks</button>
-  <button class="tablinks" onclick="openCity(event, 'Teaching')">Teaching</button>
-</div>
 
 
 
@@ -86,17 +60,8 @@ More broadly, the goal of my research is principled and mathematical understandi
 </div>
 
 
-<div id="Talks" class="tabcontent">
 
 
-
-</div>
-
-<div id="Teaching" class="tabcontent">
-
-
-
-</div>
 
 
 
