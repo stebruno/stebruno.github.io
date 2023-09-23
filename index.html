@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html> 
 <head>
   <!--link rel="stylesheet" type="text/css" href="style.css"-->
@@ -14,22 +15,43 @@
 
   ga('create', 'UA-27318059-2', 'auto');
   ga('send', 'pageview');
+
 </script>
-  
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
 </head>
-  
 <body>
 
-  <div class="banner">
-<div class="picture"><h2><strong> Stefano Bruno</strong> </h2>  </div>
+
+
+<div class="banner">
+<div class="picture"><h2><strong>Stefano Bruno</strong> </h2>  </div>
+<div class="logo"> <img src="scslogo_no_outline_simple.gif" height="60px"/>     </div>
 </div>
 
 
 <div style="width: 80%;">
     <div style="padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem; padding-top: 2rem;">
+<table class="imgtable"><tr><td>
+<a href="photo_bridge.jpg"><img src="photo_bridge.jpg" alt="Stefano Bruno" height="317px"/></a>&nbsp;</td>
 <td align="left">
-
-
 
 
 
