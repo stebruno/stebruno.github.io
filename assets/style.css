@@ -4,3 +4,6 @@
 .detail-stack ul{padding-left:1.3rem;margin:.65rem 0 0;line-height:1.8}
 .detail-stack li{margin-bottom:.3rem}
 .hero-copy>p{line-height:1.75}
+.section-index {
+    display: none;
+}
