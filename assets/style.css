@@ -66,3 +66,13 @@
     margin-top: 30px;
   }
 }
+
+/* Mobile only: center profile picture above the name */
+@media (max-width: 510px) {
+  #about .portrait-wrap {
+    justify-self: center;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
