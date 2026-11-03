@@ -92,4 +92,12 @@
   }
 }
 
+/* Desktop only: improve spacing in Dr. Stefano Bruno */
+@media (min-width: 768px) {
+  #about h1 {
+    letter-spacing: 0px;
+  }
+}
+
+
 
