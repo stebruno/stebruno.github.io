@@ -60,3 +60,9 @@
   margin-top: 10px;
   margin-bottom: 8px;
 }
+/* Desktop only: align portrait with first biography paragraph */
+@media (min-width: 768px) {
+  #about .portrait-wrap {
+    margin-top: 75px;
+  }
+}
