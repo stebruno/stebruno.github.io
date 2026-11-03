@@ -38,3 +38,25 @@
   margin-top: 28px;
   margin-bottom: 16px;
 }
+#research-visits h3,
+#industry h3,
+#teaching h3 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+#research-visits li,
+#industry li,
+#teaching li {
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+#industry ol > li {
+  margin-bottom: 28px;
+}
+
+#industry ol > li p {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
