@@ -63,6 +63,6 @@
 /* Desktop only: align portrait with first biography paragraph */
 @media (min-width: 768px) {
   #about .portrait-wrap {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
