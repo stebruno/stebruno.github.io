@@ -7,3 +7,26 @@
 .section-index {
     display: none;
 }
+.contact-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-columns h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.contact-columns ul {
+  margin-top: 0;
+}
+
+/* Stack vertically on small screens */
+@media (max-width: 700px) {
+  .contact-columns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
