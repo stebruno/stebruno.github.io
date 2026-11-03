@@ -67,12 +67,29 @@
   }
 }
 
-/* Mobile only: center profile picture above the name */
-@media (max-width: 510px) {
+
+/* Center profile picture on mobile phones only */
+@media screen and (max-width: 510px) {
   #about .portrait-wrap {
-    justify-self: center;
-    text-align: center;
-    margin-top: 0;
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: stretch;
+    margin: 0;
+  }
+
+  #about .portrait {
+    display: block;
+    width: 110px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  #about .hero-copy {
+    grid-row: 2;
   }
 }
+
 
