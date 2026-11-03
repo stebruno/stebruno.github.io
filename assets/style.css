@@ -139,6 +139,38 @@
   }
 }
 
+/* Profile icons below the portrait */
+#about .portrait-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 16px;
+  width: 100%;
+}
+
+#about .portrait-socials a {
+  color: #526170;
+  font-size: 21px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .portrait-socials a:hover {
+  color: #1b629b;
+}
+
+/* Mobile: center picture and social icons */
+@media (max-width: 510px) {
+  #about .portrait-socials {
+    justify-content: center;
+    gap: 18px;
+  }
+}
+
+
 
 
 
