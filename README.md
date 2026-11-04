@@ -1,3 +1,3 @@
-# Dr. Stefano Bruno Academic Website
+# Dr. Stefano Bruno Website
 
 Professional website of Dr. Stefano Bruno: https://stebruno.github.io/ 
